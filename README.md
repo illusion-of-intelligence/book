@@ -1,16 +1,21 @@
-## Hi there 👋
+# The Illusion of Intelligence
 
-<!--
-**illusion-of-intelligence/illusion-of-intelligence** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A book exploring how AI systems generate the *appearance* of intelligence—and why humans are wired to mistake fluent language for understanding.
 
-Here are some ideas to get you started:
+## 🌐 Live Page
+👉 [Visit the Book Page](https://illusion-of-intelligence.github.io/illusion-of-intelligence/)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📘 About the Book
+AI does not understand the world. It produces language that *resembles* understanding.
+
+This book examines:
+- Why AI sounds intelligent without knowing anything
+- How humans misinterpret fluency as intelligence
+- Why AI hallucinations are structural, not accidental
+- How to stay intellectually independent while using AI
+
+## 👤 Author
+Rajat Kumar Mohanty
+
+## 📩 Reader Feedback
+👉 [Share your feedback](https://bit.ly/illusion-feedback)
