@@ -3,7 +3,7 @@
 A book exploring how AI systems generate the *appearance* of intelligence—and why humans are wired to mistake fluent language for understanding.
 
 ## 🌐 Live Page
-👉 [Visit the Book Page](https://illusion-of-intelligence.github.io/illusion-of-intelligence/)
+👉 [Visit the Book Page](https://illusion-of-intelligence.github.io/book/)
 
 ## 📘 About the Book
 AI does not understand the world. It produces language that *resembles* understanding.
