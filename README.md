@@ -18,6 +18,6 @@ This book examines:
 Rajat Kumar Mohanty
 
 ## 📩 Reader Feedback
-👉 Scan the QR code to share your thoughts and stay in touch.
+👉 Scan the QR code to share your thoughts and stay in touch.<br>
 <img width="147" height="147" alt="illusion_feedback_gle" src="https://illusion-of-intelligence.github.io/book/images/illusion_feedback_gle.png" />
-Or visit: [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSd6fXO-fTNmy2YrdckC0vpmQ6CPPARGIAMfiKdS_3JhL0jvVw/viewform?usp=header)
+<br>Or visit: [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSd6fXO-fTNmy2YrdckC0vpmQ6CPPARGIAMfiKdS_3JhL0jvVw/viewform?usp=header)
