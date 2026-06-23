@@ -18,4 +18,6 @@ This book examines:
 Rajat Kumar Mohanty
 
 ## 📩 Reader Feedback
-👉 [Share your feedback](https://bit.ly/illusion-feedback)
+👉 Scan the QR code to share your thoughts and stay in touch.
+<img width="147" height="147" alt="illusion_feedback_gle" src="" />
+Or visit: [Feedback Form](https://docs.google.com/forms/d/e/1FAIpQLSd6fXO-fTNmy2YrdckC0vpmQ6CPPARGIAMfiKdS_3JhL0jvVw/viewform?usp=header)
