@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- ==========================================================
+     Metadata & SEO
+=========================================================== -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18121660236"></script>
 <script>
@@ -10,393 +13,427 @@
 
   gtag('config', 'AW-18121660236');
 </script>
-<meta charset="UTF-8">
 
-<title>The Illusion of Intelligence | Rajat Kumar Mohanty</title>
-<meta name="google-site-verification" content="nXJcDitnBooafG1R2mESwlmGmdtX25nwbVotnvsiID0" />
-<meta name="description" content="A critical exploration of AI illusion and hallucination. Learn why AI appears intelligent, how it deceives, why humans fall for it, and how to stay intellectually independent.">
-<meta name="keywords" content="AI illusion, AI deception, can AI think, AI hallucination explained, limits of AI">
-<meta name="author" content="Rajat Kumar Mohanty">
-<meta property="og:title" content="The Illusion of Intelligence">
-<meta property="og:description" content="A critical exploration of AI illusion and hallucination. Discover why AI appears intelligent and how to stay intellectually independent.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://illusion-of-intelligence.github.io/book/">
-<meta property="og:" content="https://illusion-of-intelligence.github.io/book/images/ebook_TitlePage.jpg">
-<link rel="canonical" href="https://illusion-of-intelligence.github.io/book/">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
+<title>The Illusion of Intelligence | Rajat Kumar Mohanty</title>
 
-/* RESET */
-* {
+<meta name="description" content="A critical examination of why AI appears intelligent, how it creates the illusion of understanding, why humans trust it, and how to stay intellectually independent.">
+
+<meta name="author" content="Rajat Kumar Mohanty">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="canonical" href="https://illusion-of-intelligence.github.io/book/">
+<link rel="icon" href="images/favicon.png" type="image/png">
+
+<meta property="og:title" content="The Illusion of Intelligence">
+<meta property="og:description" content="A critical examination of why AI appears intelligent, how it creates the illusion of understanding, why humans trust it, and how to stay intellectually independent.">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://illusion-of-intelligence.github.io/book/">
+<meta property="og:image" content="https://illusion-of-intelligence.github.io/book/images/ebook_TitlePage.jpg">
+<meta property="og:image:alt" content="Cover of The Illusion of Intelligence by Rajat Kumar Mohanty">
+<meta property="og:site_name" content="The Illusion of Intelligence">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Illusion of Intelligence">
+<meta name="twitter:description" content="A critical examination of why AI appears intelligent, how it creates the illusion of understanding, why humans trust it, and how to stay intellectually independent.">
+<meta name="twitter:image" content="https://illusion-of-intelligence.github.io/book/images/ebook_TitlePage.jpg">
+
+<meta name="google-site-verification" content="nXJcDitnBooafG1R2mESwlmGmdtX25nwbVotnvsiID0">
+
+<!-- ==========================================================
+     Styles
+=========================================================== -->
+<style>
+/* Mobile-first responsive CSS will go here */
+/* ==========================================================================
+   The Illusion of Intelligence
+   Mobile-first stylesheet
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-/* BODY */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding-bottom: 80px; /* prevents sticky overlap */
-  background: #fafafa;
-  color: #222;
-  line-height: 1.7;
+:root{
+  --bg:#f6f7f9;
+  --surface:#ffffff;
+  --text:#222;
+  --muted:#666;
+  --border:#e3e6ea;
+  --accent:#ff9900;
+  --accent-dark:#d97f00;
+  --shadow:0 8px 24px rgba(0,0,0,.06);
+  --radius:14px;
+  --max-width:920px;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+html{
+  scroll-behavior:smooth;
 }
 
-/* HERO */
-.hero {
-  background: #ffffff;
-  padding: 24px 20px;
+body{
+  margin:0;
+  padding:0 0 90px;
+  background:var(--bg);
+  color:var(--text);
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
 }
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
 }
 
-.hero- img {
-  width: 200px;
-  border: 1px solid #ddd;
-  margin-bottom: 4px;
+a{
+  color:inherit;
 }
 
-.hero-text {
-  text-align: center;
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:24px 18px 40px;
 }
 
-.hero-text p {
-  margin: 8px 0;
+/* Hero */
+
+.hero{
+  background:var(--surface);
+  border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow);
 }
 
-/* DESKTOP HERO */
-@media (min-width: 768px) {
-  .hero-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.hero-container{
+  max-width:var(--max-width);
+  margin:auto;
+  padding:32px 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:28px;
+}
+
+.hero-image img{
+  width:min(240px,70vw);
+  border-radius:8px;
+  border:1px solid var(--border);
+  box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+
+.hero-text{
+  text-align:center;
+}
+
+h1{
+  margin:0 0 12px;
+  font-size:clamp(2rem,5vw,3rem);
+  line-height:1.15;
+}
+
+h2{
+  margin:0 0 12px;
+  font-size:1.6rem;
+  line-height:1.25;
+}
+
+h3{
+  margin:1.3rem 0 .4rem;
+  font-size:1.15rem;
+}
+
+p{
+  margin:.75rem 0;
+}
+
+.highlight{
+  font-weight:700;
+}
+
+.hero-cta-block{
+  margin-top:1.4rem;
+}
+
+.cta{
+  display:inline-block;
+  padding:.9rem 1.3rem;
+  background:var(--accent);
+  color:#111;
+  text-decoration:none;
+  border-radius:999px;
+  font-weight:700;
+  transition:.2s ease;
+}
+
+.cta:hover,
+.cta:focus-visible{
+  background:var(--accent-dark);
+  transform:translateY(-1px);
+}
+
+.subnote{
+  margin:.45rem 0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.subnote a:hover,
+.subnote a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Sections */
+
+.section{
+  margin:28px 0;
+  padding:24px;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:0 2px 10px rgba(0,0,0,.03);
+}
+
+.section:first-child{
+  margin-top:0;
+}
+
+ul{
+  padding-left:1.25rem;
+}
+
+li+li{
+  margin-top:.45rem;
+}
+
+/* Details */
+
+.preview-group{
+  margin-top:1rem;
+}
+
+.preview-toggle{
+  margin-top:12px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#fcfcfd;
+  overflow:hidden;
+}
+
+.preview-toggle summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  font-weight:600;
+}
+
+.preview-toggle summary::-webkit-details-marker{
+  display:none;
+}
+
+.preview-toggle summary::before{
+  content:"▶";
+  margin-right:.6rem;
+  display:inline-block;
+  transition:transform .2s;
+}
+
+.preview-toggle[open] summary::before{
+  transform:rotate(90deg);
+}
+
+.preview-box{
+  padding:0 16px 16px;
+  border-top:1px solid var(--border);
+}
+
+.preview-box p:last-child{
+  margin-bottom:0;
+}
+
+/* utility */
+
+.sample-note{
+  color:var(--muted);
+  font-size:.92rem;
+}
+
+.contact-section{
+  text-align:center;
+}
+
+.footer{
+  text-align:center;
+  color:var(--muted);
+  padding:36px 18px;
+  font-size:.92rem;
+}
+
+/* Sticky CTA */
+
+.sticky-cta{
+  position:fixed;
+  left:12px;
+  right:12px;
+  bottom:12px;
+  display:block;
+  text-align:center;
+  padding:14px;
+  background:var(--accent);
+  color:#111;
+  text-decoration:none;
+  border-radius:999px;
+  font-weight:700;
+  box-shadow:0 10px 25px rgba(0,0,0,.18);
+  z-index:1000;
+}
+
+.sticky-cta:hover{
+  background:var(--accent-dark);
+}
+
+a:focus-visible,
+summary:focus-visible{
+  outline:3px solid #4d90fe;
+  outline-offset:3px;
+}
+
+/* Tablet/Desktop */
+
+@media (min-width:768px){
+
+  body{
+    font-size:17px;
   }
 
-  .hero-text {
-    text-align: left;
-    max-width: 500px;
+  .hero-container{
+    flex-direction:row;
+    align-items:center;
+    gap:48px;
+    padding:48px 24px;
   }
 
-  .hero- img {
-    width: 240px;
+  .hero-text{
+    text-align:left;
+    flex:1;
   }
-}
 
-/* HEADINGS */
-h1 {
-  font-size: 2.2em;
-  margin-bottom: 6px;
-}
+  .hero-image img{
+    width:260px;
+  }
 
-h2 {
-  margin-top: 20px;
-  font-size: 1.5em;
-  margin-bottom: 8px;
-  letter-spacing: 0.3px;
-}
+  .container{
+    padding:36px 24px 60px;
+  }
 
-h3 {
-  margin-top: 14px;
-  font-size: 1.2em;
-   margin-bottom: 4px;
-}
+  .section{
+    padding:32px;
+  }
 
-/* TEXT */
-p {
-  margin: 6px 0;
-}
-
-.highlight {
-  font-weight: bold;
-}
-
-/* SECTIONS */
-.section {
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-/* LISTS */
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* CTA BUTTON */
-.cta {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 12px;
-  background: #ff9900;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
-  transition: opacity 0.2s ease;
-}
-
-.cta:hover {
-  opacity: 0.9;
-}
-/* CTA BLOCK */
-.hero-cta-block {
-  margin-top: 10px;
-}
-
-.subnote {
-  font-size: 0.9em;
-  color: #555;
-  margin: 4px 0;
-}
-/* STICKY CTA */
-.sticky-cta {
-  position: fixed;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #ff9900;
-  color: #000;
-  padding: 10px 12px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 999;
-  opacity: 0.95;
-}
-
-/* DESKTOP STICKY */
-@media (min-width: 768px) {
-  .sticky-cta {
-    right: 20px;
-    left: auto;
-    transform: none;
-    border-radius: 6px;
+  .sticky-cta{
+    left:auto;
+    right:24px;
+    bottom:24px;
+    width:auto;
+    padding:12px 18px;
+    border-radius:10px;
   }
 }
 
-/* PREVIEW GROUP */
-.preview-group details {
-  margin-top: 8px;
-}
-.preview-group details:first-child {
-  margin-top: 0;     /* no gap above first chapter */
-}
-/* TOGGLE SUMMARY */
-.preview-toggle summary {
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.05em;
-  padding: 3px 0;
-  list-style: none; /* remove default arrow (Firefox) */
-}
+@media (min-width:1100px){
 
-/* REMOVE DEFAULT MARKER (Chrome/Safari) */
-.preview-toggle summary::-webkit-details-marker {
-  display: none;
-}
+  .hero-container,
+  .container{
+    max-width:980px;
+  }
 
-/* CUSTOM ARROW */
-.preview-toggle summary::before {
-  content: "▶";
-  display: inline-block;
-  margin-right: 8px;
-  transition: transform 0.2s ease;
-}
-
-/* ROTATE ARROW WHEN OPEN */
-.preview-toggle[open] summary::before {
-  transform: rotate(90deg);
-}
-
-/* PREVIEW BOX */
-.preview-box {
-  background: #ffffff;
-  border-left: 4px solid #ff9900;
-  padding: 12px 14px;
-  margin-top: 6px;
-  line-height: 1.5;
-  font-size: 0.95em;
-}
-  
-/*MODEL-BOX*/
-.model-box {
-  background: #fff3cd; /* soft warm highlight */
-  border-left: 4px solid #ff9900;
-  padding: 12px 14px;
-  margin: 12px 0;
-  line-height: 1.6;
-}
-/* Reduce paragraph spacing inside preview only */
-.preview-box p {
-  margin: 6px 0;        /* was inheriting 10px */
-}
-/* Highlight line tighter + emphasis */
-.preview-box .highlight {
-  margin-top: 8px;
-  font-weight: bold;
-}
-/* FOOTER */
-.footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 16px;
-  font-size: 0.9em;
-  color: #666;
+  body{
+    font-size:18px;
+  }
 }
 
 </style>
-
-<!-- SCHEMA -->
 <script type="application/ld+json">
 {
-"@context": "https://schema.org",
-"@type": "Book",
-"name": "The Illusion of Intelligence",
-"author": {
-  "@type": "Person",
-  "name": "Rajat Kumar Mohanty"
-},
-"description": "A critical exploration of AI illusion and hallucination, explaining why AI appears intelligent and how to stay intellectually independent.",
-"": "https://illusion-of-intelligence.github.io/book/images/ebook_TitlePage.jpg",
-"inLanguage": "en",
-"offers": {
-  "@type": "Offer",
-  "url": "https://www.amazon.com/dp/9358107375"
-}
-}
-</script>
- <script type="application/ld+json"> 
-{
-"@context": "https://schema.org",
-"@type": "FAQPage",
-"mainEntity": [
-
-{
-"@type": "Question",
-"name": "Is AI truly intelligent?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "No. It simulates intelligence through language patterns."
-}
-},
-
-{
-"@type": "Question",
-"name": "Why does AI sound confident?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Confidence is part of how language is generated. It reflects fluency, not knowledge."
-}
-},
-
-{
-"@type": "Question",
-"name": "Why do AI hallucinations happen?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "They are not random errors. They arise because AI predicts what sounds right, not what is true."
-}
-},
-
-{
-"@type": "Question",
-"name": "Can AI produce completely false information?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Yes. It can generate detailed, structured, and convincing content that is entirely incorrect."
-}
-},
-
-{
-"@type": "Question",
-"name": "Why do humans trust AI output so easily?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Because fluent, coherent language has historically been a reliable signal of understanding."
-}
-},
-
-{
-"@type": "Question",
-"name": "Can AI replace human thinking?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "No. Over-reliance leads to cognitive errors and weakens independent judgment."
-}
-},
-
-{
-"@type": "Question",
-"name": "How should AI be used safely?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "As a tool for exploration, not as a source of unquestioned truth."
-}
-},
-
-{
-"@type": "Question",
-"name": "Will AI become reliable in the future?",
-"acceptedAnswer": {
-"@type": "Answer",
-"text": "Improvements can reduce errors, but the underlying limitation, lack of grounding, remains."
-}
-}
-
-]
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Illusion of Intelligence: How AI Deceives — and How to Stay Smart",
+  "author": {
+    "@type": "Person",
+    "name": "Rajat Kumar Mohanty"
+  },
+  "description": "A critical examination of why AI appears intelligent, how it creates the illusion of understanding, and how readers can stay intellectually independent.",
+  "inLanguage": "en",
+  "bookFormat": "https://schema.org/EBook",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.amazon.in/dp/B0GGWJFRQ5"
+  }
 }
 </script>
 </head>
 
 <body>
-
-<!-- HERO -->
-<div class="hero">
+<!-- ==========================================================
+     Hero
+=========================================================== -->
+<header class="hero">
   <div class="hero-container">
 
     <!-- LEFT: BOOK  -->
-    <div class="hero-">
-  <img src="images/ebook_TitlePage.jpg" alt="The Illusion of Intelligence">
+    <div class="hero-image">
+      <img
+        src="imgs/ebook-coverpage-illusion-300.jpg"
+        alt="Cover of The Illusion of Intelligence by Rajat Kumar Mohanty"
+        loading="lazy"
+        width="300"
+        height="450">
+    </div>
+  <!-- RIGHT: TEXT -->
+    <div class="hero-text">
+      <h1>AI Sounds Intelligent.</h1>
+      <p class="highlight">It Understands Nothing about the Real World.</p>
+
+      <div class="hero-cta-block">
+        <a id="main-cta"
+           class="cta"
+           href="https://www.amazon.in/dp/B0GGWJFRQ5"
+           target="_blank"
+           rel="noopener noreferrer">
+          👉 View on Amazon
+        </a>
+<p class="subnote">
+  📱 <a href="https://www.amazon.in/dp/B0GGWJFRQ5"
+        target="_blank"
+        rel="noopener noreferrer">
+      Kindle Edition
+     </a>
+</p>
+
+<p class="subnote">
+  📘 <a href="https://www.amazon.com/dp/9358107375"
+        target="_blank"
+        rel="noopener noreferrer">
+      Paperback Edition
+     </a>
+</p>
+      </div>
     </div>
 
-
-  <!-- RIGHT: TEXT -->
-<div class="hero-text">
-
-  <h1>AI Sounds Intelligent.</h1>
-  <p class="highlight">It Understands Nothing about the Real World.</p>
-  
-  <div class="hero-cta-block">
-   <a id="main-cta" class="cta" href="https://www.amazon.com/dp/9358107375" target="_blank">
-      👉 View on Amazon
-    </a>
-
-    <p class="subnote">📱 Available on Amazon Kindle</p>
-    <p class="subnote">📘 Paperback</p>
   </div>
+</header>
 
-</div>
-  </div>
-
-</div>
-<div class="container">
+<!-- ==========================================================
+     The Reality of AI
+=========================================================== -->
+<main class="container">
 
 <!-- CORE -->
 
@@ -654,32 +691,74 @@ The Illusion of Intelligence: How AI Deceives — and How to Stay Smart
 <a href="https://www.amazon.com/dp/9358107375" target="_blank" class="sticky-cta">
   👉 Buy Now
 </a>
+</main>
+
+<footer class="footer">
+  <p>© 2026 Rajat Kumar Mohanty</p>
+  <p><em>The Illusion of Intelligence: How AI Deceives — and How to Stay Smart</em></p>
+</footer>
+
+<a href="https://www.amazon.com/dp/9358107375"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="sticky-cta">
+  👉 Buy Now
+</a>
+
 </body>
-
 <script>
-document.querySelectorAll('.preview-toggle').forEach((item) => {
-  item.addEventListener('toggle', function() {
-    if (this.open) {
-      document.querySelectorAll('.preview-toggle').forEach((el) => {
-        if (el !== this) el.removeAttribute('open');
+document.addEventListener("DOMContentLoaded", () => {
+
+  // ==========================================================
+  // Preview accordions
+  // Keep only one chapter open at a time
+  // ==========================================================
+
+  const previewToggles = document.querySelectorAll(".preview-toggle");
+
+  previewToggles.forEach((detailsElement) => {
+    detailsElement.addEventListener("toggle", (event) => {
+
+      const currentDetails = event.currentTarget;
+
+      if (!currentDetails.open) return;
+
+      previewToggles.forEach((otherDetails) => {
+        if (otherDetails !== currentDetails) {
+          otherDetails.removeAttribute("open");
+        }
       });
-    }
+
+    });
   });
+
+  // ==========================================================
+  // Sticky CTA
+  // Hide when the hero CTA is visible
+  // ==========================================================
+
+  const heroCTA = document.getElementById("main-cta");
+  const stickyCTA = document.querySelector(".sticky-cta");
+
+  if (heroCTA && stickyCTA) {
+
+    const ctaObserver = new IntersectionObserver(
+
+      ([entry]) => {
+        stickyCTA.style.display =
+          entry.isIntersecting ? "none" : "block";
+      },
+
+      {
+        threshold: 0.2
+      }
+
+    );
+
+    ctaObserver.observe(heroCTA);
+
+  }
+
 });
-
-const mainCTA = document.getElementById('main-cta');
-const stickyCTA = document.querySelector('.sticky-cta');
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      stickyCTA.style.display = 'none';  // hide sticky
-    } else {
-      stickyCTA.style.display = 'block'; // show sticky
-    }
-  });
-});
-
-observer.observe(mainCTA);
 </script>
 </html>
