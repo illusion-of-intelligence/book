@@ -164,7 +164,8 @@ p{
 
 .cta{
   display:inline-block;
-  padding:.9rem 1.3rem;
+  padding:.5rem .9rem;
+  font-size:.95rem;
   background:var(--accent);
   color:#111;
   text-decoration:none;
@@ -272,20 +273,21 @@ li+li{
 .footer{
   text-align:center;
   color:var(--muted);
-  padding:36px 18px;
+  padding:16px 18px;
   font-size:.92rem;
+  margin-top:40px;
 }
 
 /* Sticky CTA */
-
 .sticky-cta{
   position:fixed;
-  left:12px;
-  right:12px;
+  left:50%;
   bottom:12px;
-  display:block;
-  text-align:center;
-  padding:14px;
+  transform:translateX(-50%);
+  display:inline-block;
+  width:auto;
+  padding:8px 16px;
+  font-size:.9rem;
   background:var(--accent);
   color:#111;
   text-decoration:none;
@@ -294,7 +296,6 @@ li+li{
   box-shadow:0 10px 25px rgba(0,0,0,.18);
   z-index:1000;
 }
-
 .sticky-cta:hover{
   background:var(--accent-dark);
 }
@@ -676,11 +677,6 @@ Read more:
 </div>
 </main>
 
-<footer class="footer">
-  <p>© 2026 Rajat Kumar Mohanty</p>
-  <p><em>The Illusion of Intelligence: How AI Deceives — and How to Stay Smart</em></p>
-</footer>
-
 <a href="https://www.amazon.com/dp/9358107375"
    target="_blank"
    rel="noopener noreferrer"
@@ -689,6 +685,11 @@ Read more:
 </a>
 
 </body>
+<footer class="footer">
+  <p>© 2026 Rajat Kumar Mohanty</p>
+  <p><em>The Illusion of Intelligence: How AI Deceives — and How to Stay Smart</em></p>
+</footer>
+     
 <script>
 document.addEventListener("DOMContentLoaded", () => {
 
