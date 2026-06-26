@@ -286,8 +286,8 @@ li+li{
   transform:translateX(-50%);
   display:inline-block;
   width:auto;
-  padding:8px 16px;
-  font-size:.9rem;
+  padding:8px 12px;
+  font-size:.8rem;
   background:var(--accent);
   color:#111;
   text-decoration:none;
@@ -344,7 +344,7 @@ summary:focus-visible{
     right:24px;
     bottom:24px;
     width:auto;
-    padding:12px 18px;
+    padding:8px 14px;
     border-radius:10px;
   }
 }
@@ -721,28 +721,39 @@ document.addEventListener("DOMContentLoaded", () => {
   // Hide when the hero CTA is visible
   // ==========================================================
 
-  const heroCTA = document.getElementById("main-cta");
-  const stickyCTA = document.querySelector(".sticky-cta");
+ const heroCTA = document.getElementById("main-cta");
+const stickyCTA = document.querySelector(".sticky-cta");
 
-  if (heroCTA && stickyCTA) {
+if (heroCTA && stickyCTA) {
 
-    const ctaObserver = new IntersectionObserver(
+  let heroVisible = true;
 
-      ([entry]) => {
-        stickyCTA.style.display =
-          entry.isIntersecting ? "none" : "block";
-      },
+  const updateStickyCTA = () => {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+    const percentScrolled = window.scrollY / maxScroll;
 
-      {
-        threshold: 0.2
-      }
+    if (!heroVisible && percentScrolled >= 0.70) {
+      stickyCTA.style.display = "block";
+    } else {
+      stickyCTA.style.display = "none";
+    }
+  };
 
-    );
+  const ctaObserver = new IntersectionObserver(
+    ([entry]) => {
+      heroVisible = entry.isIntersecting;
+      updateStickyCTA();
+    },
+    {
+      threshold: 0.2
+    }
+  );
 
-    ctaObserver.observe(heroCTA);
+  ctaObserver.observe(heroCTA);
 
-  }
+  window.addEventListener("scroll", updateStickyCTA);
 
+}
 });
 </script>
 </html>
